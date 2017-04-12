@@ -1,0 +1,15 @@
+terrain_index:
+    path:     /
+    defaults: { _controller: "FrancoisBundle:terrain:index" }
+    methods:  GET
+
+terrain_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrancoisBundle:terrain:show" }
+    methods:  GET
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+flight_index:
+    path:     /
+    defaults: { _controller: "FrancoisBundle:flight:index" }
+    methods:  GET
+
+flight_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrancoisBundle:flight:show" }
+    methods:  GET
+
+flight_new:
+    path:     /new
+    defaults: { _controller: "FrancoisBundle:flight:new" }
+    methods:  [GET, POST]
+
+flight_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrancoisBundle:flight:edit" }
+    methods:  [GET, POST]
+
+flight_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrancoisBundle:flight:delete" }
+    methods:  DELETE

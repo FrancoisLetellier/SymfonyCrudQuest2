@@ -1,0 +1,31 @@
+FrancoisBundle\Entity\terrain:
+    type: entity
+    table: null
+    repositoryClass: FrancoisBundle\Repository\terrainRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+        icao:
+            type: string
+            length: '4'
+            nullable: true
+            unique: true
+        latitude:
+            type: float
+        longitude:
+            type: float
+        city:
+            type: string
+            length: 255
+        country:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

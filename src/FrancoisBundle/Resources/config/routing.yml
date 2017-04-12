@@ -1,0 +1,23 @@
+francois_homepage:
+    path: /
+    defaults: { _controller: FrancoisBundle:Default:index }
+
+francois_reservation:
+    resource: "@FrancoisBundle/Resources/config/routing/reservation.yml"
+    prefix:   /reservation
+
+
+francois_terrain:
+    resource: "@FrancoisBundle/Resources/config/routing/terrain.yml"
+    prefix:   /terrain
+
+
+francois_flight:
+    resource: "@FrancoisBundle/Resources/config/routing/flight.yml"
+    prefix:   /flight
+
+francois_planemodel:
+    resource: "@FrancoisBundle/Resources/config/routing/planemodel.yml"
+    prefix:   /planemodel
+
+
